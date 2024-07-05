@@ -471,6 +471,9 @@ window.onload = function() {
         keyPattern = keySequenceInput.split("").map((c) => {
 		return c;
 	});
+	   if (keyPattern.length == 0) {
+		keyPattern = "v^<>".split("");
+	   }
         document.getElementById('sequence-display').textContent = keyPattern.join(', ');
 
     intervalMs = parseInt(document.getElementById('interval').value, 10);
