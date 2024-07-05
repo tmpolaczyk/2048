@@ -193,3 +193,9 @@ body {
 		font-size: 2em;
 	}
 }
+
+/* Add this to your main.css */
+.highlight {
+    background-color: yellow; /* or any other highlighting color */
+    font-weight: bold;
+}
